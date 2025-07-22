@@ -1,0 +1,34 @@
+footer {
+  position: relative;
+  background-color: #000000;
+  animation: bloodDrip 4s ease-in-out infinite;
+  overflow: hidden;
+}
+
+@keyframes bloodDrip {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+#footer_itens {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8% 40px 8%;
+  align-items: center;
+}
+
+#copyright {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  #footer_itens {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Lading Page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-gamepad" id="nav_logo"> SOULS</i>
+
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            Você morreu... mas não é o fim.
+
+            <br />
+            <span>Nunca é </span>
+          </h1>
+
+          <p class="description">
+            As terras intermédias aguardam, cobertas por névoa, cinzas e ecos de
+            reis esquecidos. Você é um Maculado — sem luz, sem rumo, mas com um
+            propósito que desafia os deuses.A cada passo, há dor. A cada
+            vitória, cicatrizes. Mas mesmo caído mil vezes, você se ergue. Pois
+            neste mundo cruel e magnífico, só os persistentes gravam seus nomes
+            nas runas da eternidade.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Armas</a>
+            <a href="#" class="btn-default"> Ashes of War</a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a href="https://github.com/JJ-Henrique" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joaoschueler/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/jarvao/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img src="images/hero5.png" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Weapons</h2>
+        <h3 class="section-subtitle">Bosse's Weapons</h3>
+
+        <div id="weapons">
+          <div class="weapon">
+            <div class="weapon-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <img src="images/meteoric.png" class="weapon-heart" alt="" />
+
+            <h3 class="weapon-title">Ancient Meteoric Ore Greatsword</h3>
+
+            <span class="weapon-description">
+              One of the treasures of the ruined forges
+            </span>
+
+            <div class="weapon-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="weapon-price">
+              <h4>50000 runes</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-rupee-sign"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="weapon">
+            <div class="weapon-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <img src="images/morgott.png" class="weapon-heart" alt="" />
+
+            <h3 class="weapon-title">Morgott's Cursed Sword</h3>
+
+            <span class="weapon-description">
+              The accursed blood that Morgott recanted and sealed away reformed
+              into this blade
+            </span>
+
+            <div class="weapon-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="weapon-price">
+              <h4>50000 runes</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-rupee-sign"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="weapon">
+            <div class="weapon-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <img src="images/rahdan.png" class="weapon-heart" alt="" />
+
+            <h3 class="weapon-title">Greatsword of Radahn</h3>
+
+            <span class="weapon-description">
+              These were in his possession immediately before his triumph over
+              the stars
+            </span>
+
+            <div class="weapon-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="weapon-price">
+              <h4>50000 runes</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-rupee-sign"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="weapon">
+            <div class="weapon-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <img src="images/godrick.png" class="weapon-heart" alt="" />
+
+            <h3 class="weapon-title">Axe of Godrick</h3>
+
+            <span class="weapon-description">
+              I command thee kneel! For I am the lord of all that is golden!
+            </span>
+
+            <div class="weapon-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="weapon-price">
+              <h4>50000 runes</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-rupee-sign"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="images/knight.png" class="testimonials_knight" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os Players falam sobre o Jogo</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="images/anime-girl.gif" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  PaiDoFrasco+12
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Meu terapeuta disse que eu devia evitar estresse. Então
+                  joguei Elden Ring. Agora somos dois precisando de ajuda."
+                </p>
+              </div>
+            </div>
+            <div class="feedback">
+              <img src="images/cry.png" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Morreuvaldo das Cinzas
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Minha esposa me deixou, meus amigos se foram, minha conta de
+                  luz venceu... mas eu matei o Malenia. Valeu a pena."
+                </p>
+              </div>
+            </div>
+            <div class="feedback">
+              <img src="images/dude.jpg" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  100Nome
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Elden Ring me ensinou paciência, persistência… e como gritar
+                  no travesseiro às 3 da manhã. Acordei triste"
+                </p>
+              </div>
+            </div>
+            <div class="feedback">
+              <img src="images/dude2.jpg" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Vinho de Diezel
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Passei 2 horas pra chegar no chefe. Morri em 10 segundos.
+                  10/10, choraria de novo. Game of the Year"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-default">Ver mais comentários</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="images/wave.svg" alt="" />
+      <div id="footer_itens">
+        <span id="copyright"> &copy 2025 Jarvão </span>
+        <div class="social-media-buttons">
+          <a href="https://github.com/JJ-Henrique" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/joaoschueler/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/jarvao/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

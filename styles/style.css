@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+@import url("header.css");
+@import url("home.css");
+@import url("menu.css");
+@import url("testimonials.css");
+@import url("footer.css");
+
+:root {
+  --color-primary-1: ;
+}
+
+* {
+  font-family: "Macondo", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ff4d00;
+  text-shadow: 2px 2px 6px rgba(255, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.title {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #0a0a0a, #4b0000);
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ff4d00;
+  box-shadow: 0 0 10px lch(53.23% 104.58 40 / 0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn-default:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(255, 50, 0, 0.5);
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  background: linear-gradient(145deg, #0a0a0a, #4b0000);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f8d477;
+}
+
+.social-media-buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(255, 50, 0, 0.5);
+}
+
+.section-title {
+  color: #ee0000;
+  font-size: 1.563rem;
+}
+
+.section-subtitle {
+  font-size: 2.1775rem;
+}

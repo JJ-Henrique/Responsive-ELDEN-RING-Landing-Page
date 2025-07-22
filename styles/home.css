@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+
+#home {
+  display: flex;
+  min-height: calc(100vh - 91px);
+  position: relative;
+}
+
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+
+#cta .title {
+  font-size: 4rem;
+  color: #f8d477;
+}
+
+#cta .title span {
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #ff4d00;
+}
+
+#cta .description {
+  font-size: 1.2rem;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: #ff4d00;
+}
+
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 80%;
+  z-index: 2;
+}
+
+#banner img {
+  height: 105%;
+  width: fit-content;
+}
+
+/* .shape {
+    border: 2px solid #ff9100;
+    background-color: transparent; 
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+} */
+
+@media screen and (max-width: 1170px) {
+  #home {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img,
+  #home .shape {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
+    
+} */

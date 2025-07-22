@@ -1,0 +1,85 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#weapons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.weapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 18px;
+  width: 25%;
+  padding: 20px;
+  background: linear-gradient(145deg, #0a0a0a, #1a0000);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.weapon:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 50, 0, 0.4);
+}
+
+.weapon-title {
+  text-align: center;
+}
+
+.weapon-icon {
+  position: absolute;
+  background-color: #4b0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: antiquewhite;
+  width: 60px;
+  height: 60px;
+  border-radius: 0px 37.5px 0px 42.5px;
+  right: -10px;
+  top: -10px;
+}
+
+.weapon-description {
+  color: #4b0000;
+  text-align: center;
+}
+
+.weapon-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+  #weapons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .weapon {
+    width: calc(50% - 12px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .weapon {
+    width: 100%;
+  }
+  #menu .section-subtitle {
+    text-align: center;
+  }
+}
